@@ -26,7 +26,7 @@ body {
 }
 
 #modal-toggle:checked ~ .modal {
-  display: flex;
+  display: block;
 }
 
 .modal-content {
