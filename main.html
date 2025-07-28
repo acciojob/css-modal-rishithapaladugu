@@ -9,19 +9,27 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<button id="myModal">Open Modal</button>
-	<div class="modal">
-		<div class="modal-content">
-			<div class="modal-header">
-				<h2>Modal Header</h2>
-				 <span class="close-modal">&times;</span>
-			</div>
-				<div class="modal-body">
-					<p>Modal Body content</p>
-				</div>
-		</div>
-	</div>
-				
+	 <!-- Hidden checkbox to toggle modal -->
+  <input type="checkbox" id="modal-toggle" hidden>
+
+  <!-- Open Modal Button -->
+  <label for="modal-toggle" id="openModal">Open Modal</label>
+
+  <!-- Modal Overlay -->
+  <div class="modal">
+    <label for="modal-toggle" class="modal-background"></label>
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Modal Header</h2>
+        <!-- Close Button -->
+        <label for="modal-toggle" class="close-modal">&times;</label>
+      </div>
+      <div class="modal-body">
+        <p>Modal Body Content</p>
+      </div>
+    </div>
+  </div>	
 	
     <script type="text/javascript" src="./script.js">
 </script>
